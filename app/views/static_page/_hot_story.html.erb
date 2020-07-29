@@ -1,0 +1,13 @@
+<div class="row">
+  <% @hot_stories.each do |i| %>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+    <div class = "card" >
+      <img  class="image_size" src="<%= i.img%>" alt=<%= i.story_name %> >
+      <div class="caption">
+          <a href="/#" title="<%= i.story_name %>"><%= i.story_name %></a>
+      </div>
+      <p> <%= i.views %> views</p>
+    </div>
+  </div>
+  <% end %>
+</div> 

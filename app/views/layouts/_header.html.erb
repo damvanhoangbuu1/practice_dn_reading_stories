@@ -8,10 +8,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">
-        <span><i class="fas fa-book-open"></i></span>
-      TRUYEN FULL
-      </a>
+      <%= link_to root_path , class: "navbar-brand" do %>
+        <span><i class="fas fa-book-open"> TRUYEN FULL</i></span>
+      <% end %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,22 +22,21 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The loai <span class="caret"></span></a>
           <ul class="dropdown-menu">
               <% categories.each do |c|%>
-                <li><%= c.category_name %><li>
+                <li><%= c %><li>
               <% end %>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <form class="navbar-form navbar-left">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-          <button type="submit" class="btn btn-default">
-            <i class="fas fa-search"></i>
-          </button>
+        <form class="navbar-form navbar-left" role="search">
+          <%= form_tag( root_path , method: :get, class: "form-inline") do |f| %>
+            <div class="form-group">
+              <%= text_field_tag :term, params[:term], class: "form-control" %>
+            </div>
+            <%= submit_tag "Search", class: "btn btn-default" %>
+          <% end %>
         </form>
         <li><a href="#">Login</a></li>
-        <%
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
