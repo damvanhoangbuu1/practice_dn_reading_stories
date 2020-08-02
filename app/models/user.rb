@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    has_many :actions
-    has_many :payment_historys
-    has_many :storys
+  has_many :actions, dependent: :delete_all
+  has_many :payment_historys, dependent: :delete_all
+  has_many :storys, dependent: :delete_all
 end
