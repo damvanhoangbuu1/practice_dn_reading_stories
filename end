@@ -1,0 +1,87 @@
+[33mcommit 063f0a1b3f51b9c8011a9a39d1cb9f8130b1b9cb[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: vanvtt-0952 <49464465+vanvtt-0952@users.noreply.github.com>
+Date:   Tue Jul 21 10:56:13 2020 +0700
+
+    Initial commit
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..902de7a[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,67 @@[m
+[32m+[m[32m*.rbc[m
+[32m+[m[32mcapybara-*.html[m
+[32m+[m[32m.rspec[m
+[32m+[m[32m/db/*.sqlite3[m
+[32m+[m[32m/db/*.sqlite3-journal[m
+[32m+[m[32m/db/*.sqlite3-[0-9]*[m
+[32m+[m[32m/public/system[m
+[32m+[m[32m/coverage/[m
+[32m+[m[32m/spec/tmp[m
+[32m+[m[32m*.orig[m
+[32m+[m[32mrerun.txt[m
+[32m+[m[32mpickle-email-*.html[m
+[32m+[m
+[32m+[m[32m# Ignore all logfiles and tempfiles.[m
+[32m+[m[32m/log/*[m
+[32m+[m[32m/tmp/*[m
+[32m+[m[32m!/log/.keep[m
+[32m+[m[32m!/tmp/.keep[m
+[32m+[m
+[32m+[m[32m# TODO Comment out this rule if you are OK with secrets being uploaded to the repo[m
+[32m+[m[32mconfig/initializers/secret_token.rb[m
+[32m+[m[32mconfig/master.key[m
+[32m+[m
+[32m+[m[32m# Only include if you have production secrets in this file, which is no longer a Rails default[m
+[32m+[m[32m# config/secrets.yml[m
+[32m+[m
+[32m+[m[32m# dotenv[m
+[32m+[m[32m# TODO Comment out this rule if environment variables can be committed[m
+[32m+[m[32m.env[m
+[32m+[m
+[32m+[m[32m## Environment normalization:[m
+[32m+[m[32m/.bundle[m
+[32m+[m[32m/vendor/bundle[m
+[32m+[m
+[32m+[m[32m# these should all be checked in to normalize the environment:[m
+[32m+[m[32m# Gemfile.lock, .ruby-version, .ruby-gemset[m
+[32m+[m
+[32m+[m[32m# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:[m
+[32m+[m[32m.rvmrc[m
+[32m+[m
+[32m+[m[32m# if using bower-rails ignore default bower_components path bower.json files[m
+[32m+[m[32m/vendor/assets/bower_components[m
+[32m+[m[32m*.bowerrc[m
+[32m+[m[32mbower.json[m
+[32m+[m
+[32m+[m[32m# Ignore pow environment settings[m
+[32m+[m[32m.powenv[m
+[32m+[m
+[32m+[m[32m# Ignore Byebug command history file.[m
+[32m+[m[32m.byebug_history[m
+[32m+[m
+[32m+[m[32m# Ignore node_modules[m
+[32m+[m[32mnode_modules/[m
+[32m+[m
+[32m+[m[32m# Ignore precompiled javascript packs[m
+[32m+[m[32m/public/packs[m
+[32m+[m[32m/public/packs-test[m
+[32m+[m[32m/public/assets[m
+[32m+[m
+[32m+[m[32m# Ignore yarn files[m
+[32m+[m[32m/yarn-error.log[m
+[32m+[m[32myarn-debug.log*[m
+[32m+[m[32m.yarn-integrity[m
+[32m+[m
+[32m+[m[32m# Ignore uploaded files in development[m
+[32m+[m[32m/storage/*[m
+[32m+[m[32m!/storage/.keep[m
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..75f141c[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m# practice_dn_reading_stories[m
+\ No newline at end of file[m
