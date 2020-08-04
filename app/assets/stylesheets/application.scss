@@ -1,0 +1,226 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.font-logo {
+font-family: 'Passion', 'Times New Roman', Times, serif;
+color: red;
+font-size: 25px;
+}
+.img-size {
+width: 40px;
+height: 40px;
+}
+.mg-left-30 {
+margin-left: 30px;
+}
+.mg-right-50 {
+margin-right: 50px;
+}
+.mg-right-10 {
+margin-right: 10px;
+}
+
+.mg-left-400{
+text-align: 400px;
+}
+
+.footer {
+background: #152f4f;
+color: white;
+
+.links {
+  ul {
+      list-style-type: none;
+  }
+  li a {
+      color: white;
+      transition: color .2s;
+      &:hover {
+          text-decoration: none;
+          color: #4180cb;
+      }
+  }
+}
+.about-company {
+  i {
+      font-size: 25px;
+  }
+  a {
+      color: white;
+      transition: color .2s;
+      &:hover {
+          color: #4180cb;
+      }
+  }
+}
+.location {
+  i {
+      font-size: 18px;
+  }
+}
+.copyright p {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.image_size {
+  width: 200px;
+  height: 200px;
+}
+
+.image_size_long {
+  width: 200px;
+  height: 300px;
+}
+.image_size_small {
+  width: 100px;
+  height: 100px;
+}
+.image_size_ex_long {
+  width: 400px;
+  height: 500px;
+}
+.big-banner {
+  background-image: url('/assets/hinh nen 2.jpg');
+  height: 100%;
+}
+.pri-page {
+  background: url('/assets/bg2.jpg');
+}
+.read {
+  font-size: 26px;
+  font-family: 'Courier New', Courier, monospace;
+}
+@mixin background-tile {
+  box-sizing: border-box;
+  // background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+.story-show {
+@include background-tile;
+}
+.story-index {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.comment-show {
+  box-sizing: border-box;
+  border-radius: 5px;
+  // box-shadow: 3px 3px 5px 6px #ccc;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+.btn-custom2 {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #222;
+  padding: 8px 20px;
+  border-radius: 5px;
+  &:hover {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    transition: 0.5s;
+  }
+}
+
+.content-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border-left:2px solid #bfbfbf;
+}
+
+.content-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.menu{
+  float:right;
+  padding-top: 1%;
+}
+.menu li{
+  display:inline-block;
+}
+.menu li:first-child{
+  margin-left:0;
+}
+.menu li a {
+  display: block;
+  font-size: 18px;
+  padding: 6px 9px;
+  margin-bottom: 2px;
+  color:#007bff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: 300;
+}
+.menu li a:hover ,.menu li.active a{
+  color:#4BCAFF;
+  text-decoration: none;
+}
+#nav .current a {
+  color:red;
+}img-thumbnail offset-md-2
+  .toggleMenu {
+  display:  none;
+  width: 100%;
+}
+.nav:before,
+.nav:after {
+  content: " ";
+  display: table;
+}
+.nav:after {
+  clear: both;
+}
+.nav ul {
+  list-style: none;
+}
+
+.fixed-container {
+  position: fixed;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 200px;
+  height: 250px;
+  text-align: center;
+  margin-top: 10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
