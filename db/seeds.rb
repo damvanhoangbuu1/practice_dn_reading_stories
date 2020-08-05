@@ -50,6 +50,7 @@ end
   s.img = "/assets/ (#{n+1}).jpg"
   s.category_id = category_id
   s.views = views
+  s.introduction = Faker::TvShows::Buffy.episode
   s.save
 end
 
@@ -66,6 +67,7 @@ end
   s.img = "/assets/ (#{n+1}).jpg"
   s.category_id = category_id
   s.views = views
+  s.introduction = Faker::TvShows::Buffy.episode
   s.save
 end
 

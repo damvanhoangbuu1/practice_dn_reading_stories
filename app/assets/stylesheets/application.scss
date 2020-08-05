@@ -230,3 +230,147 @@ color: white;
 .pad-top-15 {
 	padding-top: 15px;
 } 
+.breadcrumb {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 50px;
+  border-radius: 0;
+  .breadcrumb-item {
+    &.active {
+      color: #000;
+      font-size: 20px;
+      font-weight: 300;
+
+    }
+  }
+  a {
+    font-weight: 200;
+    color: #000;
+    font-size: 14px;
+  }
+}
+.product-sec {
+  margin-bottom: 100px;
+  #myCarousel {
+    .carousel-indicators {
+      margin-left: initial;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: initial;
+      bottom: inherit;
+      display: block;
+      margin-right: 0;
+      width: 115px;
+      & > li {
+        width: 100%;
+        margin-left: 0;
+        height: initial;
+        text-indent: initial;
+        display: block;
+        margin-bottom: 12px;
+        img {
+          cursor: pointer;
+        }
+        &.active {
+          img {
+            opacity: 0.7;
+            outline: 1px solid #f00;
+          }
+        }
+      }
+    }
+    .list-inline {
+      white-space: nowrap;
+    }
+  }
+  .btn-sec {
+    width: 100%;
+    clear: both;
+    .btn {
+      margin-right: 15px;
+    }
+  }
+  .carousel-inner {
+    width: 280px;
+    float: left;
+    margin-right: 15px;
+  }
+  .slider-chapter {
+    margin-top: 30px;
+  }
+  .slider-content {
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-bottom: 25px;
+      white-space: pre-wrap;
+      height: 100px;
+    }
+    progress {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+    ul {
+      list-style: none;
+      width: 700px;
+      height: 180px;
+      margin-bottom: 40px;
+      float: left;
+      li {
+        margin-bottom: 10px;
+        float: left;
+        width: 700px;
+        span {
+          width: 200px;
+          font-weight: 300;
+          &.clm {
+            width: 5px;
+          }
+          &.detail {
+            font-size: 16px;
+            width: auto;
+            text-decoration: none;
+            line-height: 24px;
+          }
+          &.name {
+            padding-left: 20px;
+            font-weight: 600;
+            width: 200px;
+            color: red;
+            font-size: 18px;
+          }
+          &.save-cost {
+            text-align: right;
+            width: 100%;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .slider-sec {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 520px;
+    flex: 0 0 350px;
+    max-width: 350px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #363636;
+  }
+}
+
+.right{
+  float: right;
+}

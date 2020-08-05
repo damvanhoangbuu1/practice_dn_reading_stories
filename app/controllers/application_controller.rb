@@ -13,4 +13,11 @@ class ApplicationController < ActionController::Base
   def default_url_options
     {locale: I18n.locale}
   end
+
+  def load_story
+    @story = Story.find_by id: params[:id]
+    return if @story
+    flash[:danger] = t ".not_found"
+    redirect_to root_path
+  end
 end

@@ -1,0 +1,10 @@
+<section class="product-sec">
+  <div class="container">
+    <%= render "next_previous_btn" %>
+    <h1><%= t ".chapter" %> <%= @chapter.chapter_number %>: <%= @chapter.chapter_name %></h1>
+    <div class="row">
+      <p><%= @chapter.content.html_safe %></p>
+    </div>
+    <%= render "next_previous_btn" %>
+  </div>
+</section>
