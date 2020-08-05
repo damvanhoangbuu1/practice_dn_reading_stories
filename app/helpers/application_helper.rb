@@ -5,7 +5,7 @@ module ApplicationHelper
     end
   
     def categories
-      Category.all
+      Category.order_by_created_at.pluck :category_name
     end
   end
   
